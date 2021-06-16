@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC  "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Aldec Coverage Report</title>
+    <link rel="shortcut icon" href="coverage_data_files/img/favicon.ico" />
+    <link type="text/css" href="coverage_data_files/css/jquery-ui.css" rel="stylesheet" />
+    <link type="text/css" href="coverage_data_files/css/jquery-ui.structure.css " rel="stylesheet" />
+    <link type="text/css" href="coverage_data_files/css/jquery-ui.theme.css " rel="stylesheet" />
+    <link type="text/css" href="coverage_data_files/css/jstree/style.css" rel="stylesheet" />
+    <link type="text/css" href="coverage_data_files/css/sh.core.css" rel="stylesheet" />
+    <link type="text/css" href="coverage_data_files/css/sh.core.default.css" rel="stylesheet" />
+    <link type="text/css" href="coverage_data_files/css/style.css " rel="stylesheet" />
+    <script type="text/javascript">
+        if ( !window.addEventListener )
+            window.location = "coverage_data_files/browser.html";
+    </script>
+    <script type="text/javascript" src="coverage_data_files/js/jquery.js"></script>
+    <script type="text/javascript" src="coverage_data_files/js/jquery.ui.js"></script>
+    <script type="text/javascript" src="coverage_data_files/js/jquery.jstree.js"></script>
+    <script type="text/javascript" src="coverage_data_files/js/fast_open_close.jstree.js"></script>
+    <script type="text/javascript" src="coverage_data_files/js/xregexp.js"></script>
+    <script type="text/javascript" src="coverage_data_files/js/sh.core.js"></script>
+    <script type="text/javascript" src="coverage_data_files/js/sh.brush.edif.js"></script>
+    <script type="text/javascript" src="coverage_data_files/js/sh.brush.sv.js"></script>
+    <script type="text/javascript" src="coverage_data_files/js/sh.brush.vhdl.js"></script>
+    <script type="text/javascript" src="coverage_data_files/js/tools.js"></script>
+    <script type="text/javascript" src="coverage_data_files/js/tabledecorator.js"></script>
+    <script type="text/javascript" src="coverage_data_files/js/tabswitcher.js"></script>
+    <script type="text/javascript" src="coverage_data_files/js/countermanager.js"></script>
+    <script type="text/javascript" src="coverage_data_files/js/report.js"></script>
+    <script type="text/javascript" src="coverage_data_files/js/covergrouploader.js"></script>
+    <script type="text/javascript" src="coverage_data_files/js/expressionloader.js"></script>
+    <script type="text/javascript" src="coverage_data_files/js/toggleloader.js"></script>
+    <script type="text/javascript" src="coverage_data_files/js/assertionloader.js"></script>
+    <script type="text/javascript" src="coverage_data_files/js/pathloader.js"></script>
+    <script type="text/javascript" src="coverage_data_files/js/machineloader.js"></script>
+    <script type="text/javascript" src="coverage_data_files/js/planloader.js"></script>
+    <script type="text/javascript" src="coverage_data_files/js/rankingloader.js"></script>
+    <script type="text/javascript" src="coverage_data_files/data-design.js"></script>
+    <script type="text/javascript" src="coverage_data_files/data-cvg-all.js"></script>
+    <script type="text/javascript" src="coverage_data_files/data-summary.js"></script>
+    <script type="text/javascript">
+        $( window ).load( function()
+        {
+            Report.init( "coverage_data_files" );
+        } );
+    </script>
+  </head>
+  <body>
+    <div id="sidebar">
+      <div id="accordion-panel">
+        <h3><a href="#">Design</a></h3>
+        <div id="accord-design">
+          <div id="hierarchy-panel">
+            <div class="tabs tabs-bottom">
+              <ul>
+                <li><a href="#tab-inst"><span>Hierarchy</span></a></li>
+                <li><a href="#tab-du"><span>Units</span></a></li>
+                <li><a href="#tab-file"><span>Files</span></a></li>
+              </ul>
+              <div id="tab-inst">
+                <div id="tree-inst" class="tree-view"></div>
+              </div>
+              <div id="tab-du">
+                <div id="tree-du" class="tree-view"></div>
+              </div>
+              <div id="tab-file">
+                <div id="tree-file" class="tree-view"></div>
+              </div>
+            </div>
+          </div>
+          <div id="coverage-panel">
+            <div class="tabs tabs-bottom">
+              <ul>
+                <li><a href="#tab-stmt"><span>Statement</span></a></li>
+                <li><a href="#tab-branch"><span>Branch</span></a></li>
+                <li><a href="#tab-cvg"><span>Covergroup</span></a></li>
+                <li><a href="#tab-exc"><span>Expression</span></a></li>
+                <li><a href="#tab-cec"><span>Condition</span></a></li>
+                <li><a href="#tab-toggle"><span>Toggle</span></a></li>
+                <li><a href="#tab-assertion"><span>Assertion</span></a></li>
+                <li><a href="#tab-path"><span>Path</span></a></li>
+                <li><a href="#tab-machine"><span>FSM</span></a></li>
+              </ul>
+              <div id="tab-stmt">
+                <div id="tree-stmt" class="tree-view"></div>
+              </div>
+              <div id="tab-branch">
+                <div id="tree-branch" class="tree-view"></div>
+              </div>
+              <div id="tab-cvg">
+                <div id="tree-cvg" class="tree-view"></div>
+              </div>
+              <div id="tab-exc">
+                <div id="tree-exc" class="tree-view"></div>
+              </div>
+              <div id="tab-cec">
+                <div id="tree-cec" class="tree-view"></div>
+              </div>
+              <div id="tab-toggle">
+                <div id="tree-toggle" class="tree-view"></div>
+              </div>
+              <div id="tab-assertion">
+                <div id="tree-assertion" class="tree-view"></div>
+              </div>
+              <div id="tab-path">
+                <div id="tree-path" class="tree-view"></div>
+              </div>
+              <div id="tab-machine">
+                <div id="tree-machine" class="tree-view"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3><a href="#">Covergroups</a></h3>
+        <div id="accord-cvg">
+            <div id="accord-tree-cvg" class="tree-view"></div>
+        </div>
+        <h3><a href="#">Verification Plan</a></h3>
+        <div id="accord-testplan">
+            <div id="accord-tree-testplan" class="tree-view"></div>
+        </div>
+        <h3><a href="#">Ranking</a></h3>
+        <div id="accord-ranking">
+            <div id="accord-tree-ranking" class="tree-view"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="content" class="tabs">
+      <ul>
+      <li>
+      </li>
+      </ul>
+    </div>
+
+    <div id="templates" style="display: none">
+      <div id="template-summary">
+        <table class="summary border">
+          <tbody>
+            <tr>
+              <th>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="template-info">
+        <table class="border">
+          <tbody>
+            <tr>
+              <th>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="template-cvg">
+        <table class="border">
+          <tr>
+            <th>Covergroup</th>
+            <th>Hits</th>
+            <th>Goal /<br />At Least</th>
+            <th>Status</th>
+            <th>User Attributes</th>
+            <th>Extra Info</th>
+          </tr>
+        </table>
+      </div>
+      <div id="template-exc">
+        <table class="border">
+          <tr>
+            <th>Line</th>
+            <th>Hits</th>
+            <th class="filename"></th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
